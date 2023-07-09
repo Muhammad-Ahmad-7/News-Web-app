@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.W. News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex container">
+            <div class="logo-container">
+                <a href="#" class="logo-link">
+                    <img src="pngwing.com.png" alt="" class="logo">
+                </a>
+            </div>
+            <div class="link-container" id="link-container">
+                <ul class="links flex">
+                     <li class="hover-link nav-item" id="cricket" onclick="onNavItemClick('cricket')">CRICKET</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="e.g. science" id="search-bar">
+                <button class="submit-btn" id="submit-btn">
+                    Search
+                </button>
+            </div>
+            <a href="#" class="nav-toogle" id="nav-toogle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="cards flex">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">
+                    This is the title
+                </h3>
+                <h6 class="news-source" id="news-source">
+                    End Gadget 26/08/2023
+                </h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+
+    <!-- JS file link -->
+    <script src="script.js"></script>
+</body>
+</html>
